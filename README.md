@@ -1,1 +1,1 @@
-A simple minimalist and responsive Jekyll theme.
+The demo website for Bitwiser Jekyll theme.
