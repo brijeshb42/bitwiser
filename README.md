@@ -1,0 +1,1 @@
+A simple minimalist and responsive Jekyll theme.
