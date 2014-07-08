@@ -1,12 +1,12 @@
-name: Bitwiser Jekyll theme
+name: Blog Name
 markdown: redcarpet
 pygments: true
-#github: brijeshb42
+#github: username
 paginate: 5
 paginate_path: "page:num"
-email: brijeshb42@gmail.com
-#disqus: bitwiser
-ga_id: UA-47902363-1
-ga_domain: bitwiser.in
-desc: Demo website for Bitwiser Jekyll theme.
-keywords: bitwiser, jekyll, theme, templates
+#email: email@domain.com
+#disqus: disqusdomain
+#ga_id: analyticsID
+#ga_domain: analyticsDomain
+desc: Put website description for your home page.
+keywords: some, keywords, metatags
