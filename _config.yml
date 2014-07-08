@@ -1,6 +1,6 @@
 name: Bitwiser Jekyll theme
 markdown: redcarpet
-pygments: true
+pygments: false
 gituser: brijeshb42
 paginate: 5
 paginate_path: "page:num"
