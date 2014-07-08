@@ -24,8 +24,10 @@ categories:
 
 * After setting the values in ```_config.yml```, you can start adding posts in the ```_posts``` directory. The name of files in this directory should be according to specifications by ```jekyll```, i.e, ```YYYY-MM-DD-your-post-title.md```. **Note** that the file name extenion can be anything from md, markdown, mkd, textile or html.
 
+* Replace the image files ```favicon.png``` and ```sharer.png``` with images of your own.
+
 * ```git push``` your changes to your github pages repository ```https://github.com/githubUserName/githubUserName.github.io```
 
-* Then visit your blog at http://githubUserName.github.io
+* Then visit your blog at [http://githubUserName.github.io](http://githubUserName.github.io).
 
-* If you want to use a custom domain, then edit the ```CNAME`` file and add your own domain ```example.com```. Make sure your domain points to github ip address.
+* If you want to use a custom domain, then edit the ```CNAME``` file and add your own domain ```example.com```. Make sure your domain points to github ip address.
