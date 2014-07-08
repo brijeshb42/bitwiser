@@ -1,7 +1,7 @@
 name: Bitwiser Jekyll theme
 markdown: redcarpet
 pygments: false
-gituser: brijeshb42
+gituser: brijeshb42/bitwiser
 paginate: 5
 paginate_path: "page:num"
 email: brijeshb42@gmail.com
