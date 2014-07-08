@@ -1,7 +1,11 @@
 # Bitwiser Jekyll theme.
 
-## Demo: http://bitwiser.in/bitwiser/
+## Theme website: http://bitwiser.in/bitwiser/
 
-## Usage: [http://bitwiser.in/bitwiser/usage.html](http://bitwiser.in/bitwiser/usage.html)
+## Demo post: http://bitwiser.in/bitwiser/demo.html
 
-## Download Zip: [Here](https://github.com/brijeshb42/bitwiser/archive/master.zip)
+## Usage: [http://bitwiser.in/2014/07/08/bitwiser-jekyll-theme.html](http://bitwiser.in/2014/07/08/bitwiser-jekyll-theme.html)
+
+## Download Zip: [Here](http://goo.gl/iC85jv)
+
+### To get started with this theme, read the usage guide [here](http://bitwiser.in/2014/07/08/bitwiser-jekyll-theme.html). After that started creating post files in the ```_posts``` directory and push your changes to github.
