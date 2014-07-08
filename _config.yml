@@ -1,7 +1,7 @@
 name: Blog Name
 markdown: redcarpet
 pygments: true
-#github: username
+#gituser: username
 paginate: 5
 paginate_path: "page:num"
 #email: email@domain.com
@@ -10,3 +10,4 @@ paginate_path: "page:num"
 #ga_domain: analyticsDomain
 desc: Put website description for your home page.
 keywords: some, keywords, metatags
+#twitter: twitterHandle
