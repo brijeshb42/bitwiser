@@ -5,11 +5,6 @@ date:   2014-07-08 12:25:35
 categories: 
 ---
 
----
-layout: post
-title: How to use this theme
----
-
 ## How to get started with this theme
 
 * Download this theme's zip file from [here](http://goo.gl/iC85jv).
