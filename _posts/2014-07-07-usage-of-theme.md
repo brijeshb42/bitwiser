@@ -1,5 +1,12 @@
 ---
-layout: page
+layout: post
+title:  "Using Bitwiser Jekyll theme"
+date:   2014-07-08 12:25:35
+categories: 
+---
+
+---
+layout: post
 title: How to use this theme
 ---
 
