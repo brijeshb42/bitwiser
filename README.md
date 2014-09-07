@@ -1,4 +1,16 @@
 # Bitwiser Jekyll theme.
+A minimalist Jekyll theme that puts focus on content.
+
+## Features
+
+* Clean, simple and responsive layout
+* Syntax highlighting.
+* Sitemap included.
+* Google analytics.
+* Disqus commenting.
+* Share post to facebook and twitter.
+* Robots.txt included.
+* Custom 404 error page.
 
 Theme website: http://bitwiser.in/bitwiser/
 
