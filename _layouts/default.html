@@ -26,10 +26,20 @@
 
       <footer class="grid site-footer">
         <p>&copy;&nbsp;{{ site.name }}</p>
-        <small>Powered by <a href="http://jekyllrb.com" target="_blank"><em>Jekyll</em></a> using <a href="http://bitwiser.in/bitwiser/" target="_blank"><em>Bitwiser</em></a> theme.</small>
+        <p><small>Powered by <a href="http://jekyllrb.com" target="_blank"><em>Jekyll</em></a> using <a href="http://bitwiser.in/bitwiser/" target="_blank"><em>Bitwiser</em></a> theme.</small></p>
       </footer>
       {% if site.ga_id %}
         {% include analytics.html %}
       {% endif %}
+      <script src="/js/headroom.min.js"></script>
+      <script>
+        var menu, headroom;
+        function stickyHeader(){
+          menu = document.querySelector('.main-nav');
+          var headroom = new Headroom(menu);
+          headroom.init();
+        }
+        window.onload = stickyHeader;
+      </script>
     </body>
 </html>
