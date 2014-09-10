@@ -1,27 +1,25 @@
 ---
-layout: default
+layout: home
 title: Home
 sitemap:
-    priority: 1.0
-    changefreq: weekly
-    lastmod: 2014-07-07T16:57:30+05:30
+priority: 1.0
+changefreq: weekly
+lastmod: 2014-07-07T16:57:30+05:30
 ---
 
-<div id="home" class="grid posts">
-	{% for post in paginator.posts %}
-		<div class="unit whole single-post-excerpt">
-			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-			<span class="meta"><time class="timeago postlist-meta" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time></span>
-			<p>{{ post.excerpt | strip_html}}</p>
-		</div>
-	{% endfor %}
-	<div class="unit whole paginator">
-		{% if paginator.previous_page %}
-			<a href="{{ paginator.previous_page_path }}">Previous</a>
-		{% endif %}
-		<span>Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-		{% if paginator.next_page %}
-			<a href="{{ paginator.next_page_path }}">Next</a>
-		{% endif %}
-	</div>
+{% for post in paginator.posts %}
+<div class="unit whole single-post-excerpt">
+	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	<span class="meta"><time class="timeago postlist-meta" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time></span>
+	<p>{{ post.excerpt | strip_html}}</p>
+</div>
+{% endfor %}
+<div class="unit whole paginator">
+	{% if paginator.previous_page %}
+	<a href="{{ paginator.previous_page_path }}">Previous</a>
+	{% endif %}
+	<span>Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+	{% if paginator.next_page %}
+	<a href="{{ paginator.next_page_path }}">Next</a>
+	{% endif %}
 </div>

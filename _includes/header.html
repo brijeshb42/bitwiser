@@ -4,9 +4,9 @@
     <div class="grid">
       <ul>
         <li><a href="/">Home</a></li>
-        {% if site.gituser %}
+        {% if site.about_links.github %}
         <li><a href="/about.html">About</a></li>
-        <li><a href="https://github.com/{{ site.gituser }}" target="_blank">Github</a></li>
+        <li><a href="https://github.com/{{ site.about_links.github }}" target="_blank">Github</a></li>
         {% endif %}
       </ul>
     </div>
