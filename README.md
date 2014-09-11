@@ -16,7 +16,7 @@ Theme website: http://bitwiser.in/bitwiser/
 
 Demo post: http://bitwiser.in/bitwiser/demo.html
 
-Usage: [http://bitwiser.in/2014/07/08/bitwiser-jekyll-theme.html](http://bitwiser.in/2014/07/08/bitwiser-jekyll-theme.html)
+Usage: [http://bitwiser.in/2014/09/10/bitwiser-jekyll-theme.html](http://bitwiser.in/2014/09/10/bitwiser-jekyll-theme.html)
 
 Download latest Zip: [Here](http://goo.gl/iC85jv)
 
