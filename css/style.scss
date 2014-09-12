@@ -47,13 +47,13 @@ a{
 			a{
 				display: inline-block;
 				padding: 15px 20px;
-				//border: 1px solid #ccc;
-				border-bottom: 4px solid #1AC9DB;
+				border-bottom: 4px solid transparent;
 				color: #ddd;
 				text-decoration: none;
 
 				&:hover{
 					background-color: darken($nav-back-color, 10%);
+					border-bottom: 4px solid #1AC9DB;
 				}
 			}
 		}
