@@ -7,6 +7,9 @@
 @import 'variables';
 @import 'buttons';
 
+html, body{
+	background-color: #eee;
+}
 body{
 	text-align: left;
 }
@@ -117,6 +120,10 @@ a{
 }
 
 .about{
+	background-color: #fff;
+	-webkit-box-shadow: 0px 1px 2px #B1B1B1;
+	box-shadow: 0px 1px 2px #B1B1B1;
+	border-radius: $border-radius;
 	p{
 		margin: 0;
 	}
@@ -124,8 +131,8 @@ a{
 		max-width: 300px;
 		width: 100%;
 	}
-
-	.links{
+}
+.links{
 		list-style: none;
 		margin: 0;
 		padding: 0;
@@ -141,13 +148,13 @@ a{
 			}
 		}
 	}
-}
 
 .unit.posts, .posts{
 	padding: 0;
 	h2{
 		font-size: 2em;
-		margin: 0 0 0.2em 0;
+		margin: 0.2em 0 0.2em 0;
+		line-height: 1.1em;
 		a{
 			color: #0B5485;
 			&:hover{
@@ -163,20 +170,26 @@ a{
 	padding: $single-post-padding;
 	padding-left: $single-post-padding*2;
 	background-color: #f9f9f9;
-	border: 1px solid #CCCCCC;
-	-webkit-box-shadow: 3px 3px 3px rgba(50,50,50,0.28);
-	box-shadow: 3px 3px 3px rgba(50,50,50,0.28);
+	-webkit-box-shadow: 0px 1px 2px #B1B1B1;
+	box-shadow: 0px 1px 2px #B1B1B1;
+	border-radius: 3px;
+	transition: all 0.2s;
+	border: 1px solid transparent;
 
-	p{
-		margin: 1.2em 0;
+	.description{
+		margin: 0px;
+		padding: 1.2em 0em;
 		font-size: .9em;
+		border-top: 1px solid #ccc;
 	}
 }
 
 .posts{
 	.single-post-excerpt{
 		&:hover{
-			background-color: #eee;
+			-webkit-box-shadow: 0px 1px 3px #B1B1B1;
+			box-shadow: 0px 1px 3px #B1B1B1;
+			border-color: #ccc;
 		}
 	}
 }
@@ -247,15 +260,15 @@ article{
 			}
 		}
 	}
-	.posts{
-		h2{
-			font-size: 1.5em;
-		}
+	.unit.posts, .posts {
+    	h2{
+    		font-size: 1.2em;
+    	}
 	}
 	.single-post-excerpt,.post{
 		margin-bottom: 0.25em;
 		h1{
-			font-size: 1.2em;
+			font-size: 1.5em;
 		}
 	}
 }

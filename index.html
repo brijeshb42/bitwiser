@@ -11,7 +11,7 @@ lastmod: 2014-07-07T16:57:30+05:30
 <div class="unit whole single-post-excerpt">
 	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 	<span class="meta"><time class="timeago postlist-meta" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time></span>
-	<p>{{ post.excerpt | strip_html}}</p>
+	<p class="description">{{ post.excerpt | strip_html}}</p>
 </div>
 {% endfor %}
 <div class="unit whole paginator">
