@@ -18,7 +18,7 @@ description: Put website description for your home page. (about 50 words or more
 keywords: some, relevant, keywords, for, usage, in metatags
 
 ##define this for disqus comment support
-#disqus: disqusdomain
+#disqus: bitwiser
 
 ##set this to enable google analytics
 #ga_id: analyticsID

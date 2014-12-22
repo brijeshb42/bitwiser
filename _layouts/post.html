@@ -22,11 +22,40 @@ layout: default
 	<section>
 		{{ content }}
 	</section>
+	{% if site.disqus %}
 	<footer>
-		{% if site.disqus %}
-			{% include disqus.html %}
-		{% endif %}
+		<p><a href="#" id="showComments">Show Comments</a></p>
+		<div id="disqus_thread"></div>
 	</footer>
+	<script>
+		(function(w){
+			var hidden = true;
+			var disqus_shortname = '';
+			var cmtBtn = document.getElementById("showComments");
+			var dt = document.getElementById("disqus_thread");
+
+			cmtBtn.addEventListener("click", function(e){
+				e.preventDefault();
+				if(disqus_shortname === ''){
+					disqus_shortname = '{{ site.disqus }}';
+					(function() {
+			            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			        })();
+				}
+				if(hidden){
+					dt.setAttribute('style','display:block');
+					this.innerHTML = 'Hide Comments';
+				}else{
+					dt.setAttribute('style','display:none');
+					this.innerHTML = 'Show Comments';
+				}
+				hidden = !hidden;
+			});
+		})(window);
+	</script>
+	{% endif %}
 </article>
 </div>
 </div>

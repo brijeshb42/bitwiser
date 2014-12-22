@@ -100,11 +100,6 @@ a{
 }
 
 #home{
-	.posts{
-		&:first-child{
-			padding-left: 10px;
-		}
-	}
 	.sidebar{
 		&>.grid{
 			padding: 0;
@@ -211,8 +206,12 @@ article{
 		}
 	}
 	footer{
-		margin-top: 5px;
 		border-top: 1px solid #ccc;
+		margin: 0px;
+		padding-top: 10px;
+		p{
+			text-align: center;
+		}
 	}
 }
 
@@ -239,7 +238,17 @@ article{
 	text-align: center;
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 550px) {
+	#home{
+		.posts{
+			&:first-child{
+				padding: 10px 10px 0px 10px;
+			}
+		}
+		.sidebar{
+			padding: 10px;
+		}
+	}
 	.content{
 		margin-top: 1px;
 	}
@@ -270,6 +279,12 @@ article{
 		h1{
 			font-size: 1.5em;
 		}
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.about img {
+		max-width: 100%;
 	}
 }
 
