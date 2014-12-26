@@ -30,7 +30,7 @@
       {% if site.ga_id %}
         {% include analytics.html %}
       {% endif %}
-      <script src="/js/headroom.min.js"></script>
+      <!--<script src="/js/headroom.min.js"></script>
       <script>
         var menu, headroom;
         function stickyHeader(){
@@ -39,6 +39,23 @@
           headroom.init();
         }
         window.onload = stickyHeader;
+      </script>-->
+      <script>
+      function loader(){
+        var hidden = true;
+        var menu = document.querySelector(".main-nav");
+        var opener = document.querySelector(".opener");
+        opener.addEventListener("click", function(e){
+          e.preventDefault();
+          if(hidden){
+            menu.setAttribute("class", "main-nav active-menu");
+          }else{
+            menu.setAttribute("class", "main-nav");
+          }
+          hidden = !hidden;
+        });
+      }
+      window.onload = loader;
       </script>
     </body>
 </html>

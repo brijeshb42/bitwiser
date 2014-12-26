@@ -6,6 +6,7 @@
 @import 'markdown';
 @import 'variables';
 @import 'buttons';
+//@import 'anims';
 
 html, body{
 	background-color: #eee;
@@ -24,9 +25,71 @@ a{
 }
 .site-title{
 	margin: 0;
-	margin-bottom: 0.25em;
 	font-size: 4em;
 	text-align: center;
+}
+
+nav ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.android {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	padding: 0px;
+	margin: 10px 10px 0px 0px;
+	border: 1px solid #ccc;
+	z-index: 100;
+	background: #fff;
+	-webkit-box-shadow: -4px 4px 10px #898989;
+	-moz-box-shadow: -4px 4px 10px #898989;
+	box-shadow: -4px 4px 10px #898989;
+	border: none;
+
+	ul{
+		display: none;
+	}
+
+	&.active-menu{
+		min-width: 200px;
+
+		ul {
+			display: block;
+		}
+		.opener{
+			color: #08c;
+		}
+	}
+	.clear-opener{
+		clear: right;
+	}
+
+	a{
+		text-decoration: none;
+		color: #4C4B4B;
+		&.opener {
+			display: inline-block;
+			min-width: 40px;
+			min-height: 40px;
+			font-weight: bolder;
+			text-align: center;
+			float: right;
+			transform: rotate(90deg);
+		}
+		&:hover {
+			background-color: #E7E7E7;
+		}
+	}
+
+	li {
+		a {
+			display: block;
+			padding: 8px;
+		}
+	}
 }
 
 .main-nav{
@@ -36,29 +99,27 @@ a{
 	background-color: $nav-back-color;
 
 	ul{
-		list-style: none;
 		display: inline-block;
-		margin: 0;
+	}
+	li{
+		position: relative;
+		display: inline-block;
 		padding: 0;
-		li{
-			position: relative;
-			display: inline-block;
-			padding: 0;
-			margin-right: -4px;
-			text-transform: uppercase;
+		margin-right: -4px;
+		text-transform: uppercase;
+		a{
+			display: block;
+		}
+	}
+	a{
+		padding: 15px 20px;
+		border-bottom: 4px solid transparent;
+		color: #ddd;
+		text-decoration: none;
 
-			a{
-				display: inline-block;
-				padding: 15px 20px;
-				border-bottom: 4px solid transparent;
-				color: #ddd;
-				text-decoration: none;
-
-				&:hover{
-					background-color: darken($nav-back-color, 10%);
-					border-bottom: 4px solid #1AC9DB;
-				}
-			}
+		&:hover{
+			background-color: darken($nav-back-color, 10%);
+			border-bottom: 4px solid #1AC9DB;
 		}
 	}
 }
@@ -238,7 +299,7 @@ article{
 	text-align: center;
 }
 
-@media only screen and (max-width: 550px) {
+@media screen and (max-width: 568px) {
 	#home{
 		.posts{
 			&:first-child{
@@ -255,17 +316,72 @@ article{
 	.site-title{
 		font-size: 2em;
 	}
-	.main-nav{
+	.main-nav {
+		position: fixed;
+		top: 0px;
+		right: 0px;
+		margin: 10px 10px 0px 0px;
+		z-index: 100;
+		background: #fff;
+		-webkit-box-shadow: -4px 4px 10px #898989;
+		-moz-box-shadow: -4px 4px 10px #898989;
+		box-shadow: -4px 4px 10px #898989;
+		border: none;
+
 		ul{
-			display: block;
-			overflow: hidden;
-			li{
+			display: none;
+		}
+
+		&.active-menu{
+			min-width: 200px;
+			border-radius: 2px;
+			/* @include animation(menuShow 0.3s);
+			-webkit-animation-timing-function: ease-out;
+			-o-animation-timing-function: ease-out;
+			animation-timing-function: ease-out; */
+
+			ul {
 				display: block;
-				a{
-					display: block;
-					padding: 6px 10px;
-					border-bottom-width: 2px;
+			}
+			.opener{
+				color: #08c;
+			}
+		}
+		.clear-opener{
+			clear: right;
+		}
+
+		a{
+			text-decoration: none;
+			color: #4C4B4B;
+			padding: 0px;
+			border: none;
+			&.opener {
+				display: inline-block;
+				min-width: 40px;
+				min-height: 40px;
+				font-weight: bolder;
+				text-align: center;
+				float: right;
+				transform: rotate(90deg);
+				&:hover{
+					color: #08c;
 				}
+			}
+			&:hover {
+				background-color: #E7E7E7;
+				border: none;
+			}
+		}
+
+		li {
+			display: block;
+			margin: 0px;
+			a {
+				display: block;
+				padding: 8px;
+				border: none;
+				color: #4C4B4B;
 			}
 		}
 	}
