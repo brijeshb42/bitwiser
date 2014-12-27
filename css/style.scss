@@ -317,9 +317,9 @@ article{
 	}
 	.main-nav {
 		position: fixed;
-		top: 0px;
-		right: 0px;
-		margin: 10px 10px 0px 0px;
+		top: 5px;
+		right: 10px;
+		margin: 0px;
 		z-index: 100;
 		background: #fff;
 		-webkit-box-shadow: -4px 4px 10px #898989;
@@ -373,6 +373,7 @@ article{
 				transform: rotate(90deg);
 				&:hover{
 					color: #08c;
+					background-color: #fff;
 				}
 			}
 			&:hover {
