@@ -4,13 +4,15 @@ A minimalist Jekyll theme that puts focus on content.
 ## Features
 
 * Clean, simple and responsive layout
-* Syntax highlighting.
+* Code formatting.
 * Sitemap included.
 * Google analytics.
 * Disqus commenting.
 * Share post to facebook and twitter.
 * Robots.txt included.
 * Custom 404 error page.
+* Clean material like layout.
+* Awesome navigation menu on small screens.
 
 Theme website: http://bitwiser.in/bitwiser/
 
@@ -20,11 +22,13 @@ Usage: [http://bitwiser.in/2014/09/10/bitwiser-jekyll-theme.html](http://bitwise
 
 Download latest Zip: [Here](http://goo.gl/iC85jv)
 
-Or browse releases: [Here](https://github.com/brijeshb42/bitwiser/releases)
+Or browse releases: [Releases](https://github.com/brijeshb42/bitwiser/releases)
 
-To get started with this theme, read the usage guide [here](http://bitwiser.in/2014/09/10/bitwiser-jekyll-theme.html). After that start creating post files in the ```_posts``` directory and push your changes to github.
+To get started with this theme, read the [usage guide](http://bitwiser.in/2014/09/10/bitwiser-jekyll-theme.html). After that start creating post files in the ```_posts``` directory and push your changes to github.
 
-Report issues [Here](https://github.com/brijeshb42/bitwiser/issues/new)
+Report issues: [Issues](https://github.com/brijeshb42/bitwiser/issues/new)
+
+If you are using this theme, do not forget to *star* this repo or tweet [@brijeshb42](https://twitter.com/brijeshb42).
 
 
 ## Getting Started

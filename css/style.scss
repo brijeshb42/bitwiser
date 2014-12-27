@@ -6,7 +6,7 @@
 @import 'markdown';
 @import 'variables';
 @import 'buttons';
-//@import 'anims';
+@import 'anims';
 
 html, body{
 	background-color: #eee;
@@ -332,13 +332,20 @@ article{
 			display: none;
 		}
 
+		/* &:hover, &:active{
+			@include animation(menuShow 0.3s);
+			-webkit-animation-timing-function: ease-out;
+			-o-animation-timing-function: ease-out;
+			animation-timing-function: ease-out;
+		} */
+
 		&.active-menu{
 			min-width: 200px;
 			border-radius: 2px;
-			/* @include animation(menuShow 0.3s);
+			@include animation(menuShow 0.3s);
 			-webkit-animation-timing-function: ease-out;
 			-o-animation-timing-function: ease-out;
-			animation-timing-function: ease-out; */
+			animation-timing-function: ease-out;
 
 			ul {
 				display: block;

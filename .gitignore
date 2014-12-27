@@ -3,3 +3,4 @@ _site
 nbproject
 *.*~
 .sass-cache
+_posts/*.md

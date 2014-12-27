@@ -21,8 +21,8 @@ $dialog-anim-diff		: 0.2;
 }
 
 @include keyframes(menuShow){
-	0% {width: 1px;}
-	100% {width: 200px;}
+	0% {transform: scale(0.3);}
+	100% {transform: scale(1);}
 }
 
 @include keyframes(menuHide){
