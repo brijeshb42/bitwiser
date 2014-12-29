@@ -30,18 +30,8 @@
       {% if site.ga_id %}
         {% include analytics.html %}
       {% endif %}
-      <!--<script src="/js/headroom.min.js"></script>
       <script>
-        var menu, headroom;
-        function stickyHeader(){
-          menu = document.querySelector('.main-nav');
-          var headroom = new Headroom(menu);
-          headroom.init();
-        }
-        window.onload = stickyHeader;
-      </script>-->
-      <script>
-      function loader(){
+      document.addEventListener("DOMContentLoaded", function(event) {
         var hidden = true;
         var menu = document.querySelector(".main-nav");
         var opener = document.querySelector(".opener");
@@ -54,8 +44,7 @@
           }
           hidden = !hidden;
         });
-      }
-      window.onload = loader;
+      });
       </script>
     </body>
 </html>

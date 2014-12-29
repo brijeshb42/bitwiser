@@ -1,7 +1,7 @@
 ##The website title
 name: Blog Name
 ##Markdown processor
-markdown: redcarpet
+markdown: kramdown
 ##syntax highlighter. change it to pygments
 highlighter: rouge
 

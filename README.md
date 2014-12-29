@@ -7,7 +7,7 @@ A minimalist Jekyll theme that puts focus on content.
 * Code formatting.
 * Sitemap included.
 * Google analytics.
-* Disqus commenting.
+* Disqus commenting (Loaded lazily).
 * Share post to facebook and twitter.
 * Robots.txt included.
 * Custom 404 error page.
@@ -50,7 +50,7 @@ If you are using this theme, do not forget to *star* this repo or tweet [@brijes
 		If ```ga_id``` is present, make sure that ```ga_domain``` is also present.
 	* ```description```: ```A short description of your website to be included in meta tag of your homepage```
 	* ```keywords``` : ```a few frequently used keywords on your site```
-	* ```links``` : This vriable has a few commonly used social networks' links
+	* ```links``` : This variable has a few commonly used social networks' links
 		* ```facebook```: ```facebookId```
 		* ```twitter``` : ```twitterHandle```
 		* ```email```: ```email@example.com```
