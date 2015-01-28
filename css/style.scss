@@ -278,6 +278,12 @@ article{
 			border: 1px solid #ccc;
 		}
 	}
+	.next::after, .next:after{
+		content: "»";
+	}
+	.previous::after, .previous:after{
+		content: "«";
+	}
 
 }
 
