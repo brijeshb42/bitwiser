@@ -28,7 +28,9 @@ To get started with this theme, read the [usage guide](http://bitwiser.in/2014/0
 
 Report issues: [Issues](https://github.com/brijeshb42/bitwiser/issues/new)
 
-If you are using this theme, do not forget to *star* this repo or tweet [@brijeshb42](https://twitter.com/brijeshb42).
+If you are using this theme, do not forget to :star: this repo or tweet [@brijeshb42](https://twitter.com/brijeshb42).
+
+Pull requests are also welcome :thumbsup:.
 
 
 ## Getting Started
