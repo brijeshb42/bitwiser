@@ -58,7 +58,7 @@ Pull requests are also welcome :thumbsup:.
 		* ```email```: ```email@example.com```
 		* ```github```: ```githubUsername```
 	* ```about_image```: This is a new variable introduced. If defined, make sure the image is present in ```img``` directory. If not defined, a provided placeholder image is used. ** If github link is provided in ```links``` variable, then the github profile picture will be used if ```about_image``` is not defined.
-	* ```sidebar```: This is a new variable introduced. It s used to enable/disable sidebar. If present, a sidebar will be displayed. To disable sidebar, just comment this line using ```#```.
+	* ```sidebar```: This is a new variable introduced. It is used to enable/disable sidebar. If present, a sidebar will be displayed. To disable sidebar, just comment this line using ```#```.
 
 * After setting the values in ```_config.yml```, you can start adding posts in the ```_posts``` directory. Remove the example posts from the directory. The name of files in this directory should be according to specifications by ```jekyll```, i.e, ```YYYY-MM-DD-your-post-title.md```. **Note** that the file name extenion can be anything from md, markdown, mkd, textile or html.
 
