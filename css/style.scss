@@ -13,6 +13,10 @@ html, body{
 }
 body{
 	text-align: left;
+
+	i {
+		margin-right: 4px;
+	}
 }
 
 .wrap .grid,
@@ -138,6 +142,26 @@ nav ul {
 	}
 }
 
+a {
+	&.sharer {
+		padding: 0px 4px;
+		border-radius: 1px;
+		color: #333;
+
+		i {
+			margin: 0px;
+		}
+	}
+	&.facebook {
+		background: #3b5998;
+		color: #fff;
+	}
+	&.twitter {
+		background: #3B94D9;
+		color: #fff;
+	}
+}
+
 #home{
 	.sidebar{
 		&>.grid{
@@ -212,7 +236,7 @@ nav ul {
 
 	.description{
 		margin: 0px;
-		padding: 1.2em 0em;
+		padding: 0.5em 0em;
 		font-size: .9em;
 		border-top: 1px solid #ccc;
 	}
@@ -281,10 +305,38 @@ article{
 	.next::after, .next:after{
 		content: "»";
 	}
-	.previous::after, .previous:after{
+	.previous::before, .previous:before{
 		content: "«";
 	}
 
+}
+
+.meta-info {
+	overflow: auto;
+	padding: 2px 0px;
+	.meta {
+		float: left;
+		margin-right: 2px;
+	}
+	.tags {
+		float: right;
+		margin: 0px;
+		border: none;
+	}
+}
+
+.tags {
+	font-size: 0.7em;
+	padding: 4px 0px;
+	border-bottom: 1px solid #ccc;
+
+	span {
+		padding: 0px 4px;
+		background: #CFE9FA;
+		border: 1px solid #0B5485;
+		border-radius: 2px;
+		color: #0B5485;
+	}
 }
 
 .meta{
@@ -398,6 +450,15 @@ article{
 			font-size: 1.5em;
 		}
 	}
+
+	.meta-info {
+		.meta {
+			float: none;
+		}
+		.tags {
+			float: none;
+		}
+	}
 }
 
 @media only screen and (max-width: 400px) {
@@ -418,7 +479,7 @@ article{
 			display: none;
 		}
 	}
-	a.share{
+	a.sharer{
 		display: none;
 	}
 }
