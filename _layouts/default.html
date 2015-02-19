@@ -33,21 +33,6 @@
       {% if site.ga_id %}
         {% include analytics.html %}
       {% endif %}
-      <script>
-      document.addEventListener("DOMContentLoaded", function(event) {
-        var hidden = true;
-        var menu = document.querySelector(".main-nav");
-        var opener = document.querySelector(".opener");
-        opener.addEventListener("click", function(e){
-          e.preventDefault();
-          if(hidden){
-            menu.setAttribute("class", "main-nav active-menu");
-          }else{
-            menu.setAttribute("class", "main-nav");
-          }
-          hidden = !hidden;
-        });
-      });
-      </script>
+      <script src="/js/script.js"></script>
     </body>
 </html>
