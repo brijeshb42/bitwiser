@@ -1,5 +1,6 @@
 # Bitwiser Jekyll theme.
 A minimalist Jekyll theme that puts focus on content.
+For subdirectory blog support, checkout [subdirectory](https://github.com/brijeshb42/bitwiser/tree/subdirectory) tag.
 
 ## Features
 
